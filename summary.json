@@ -1,0 +1,81 @@
+{
+  "generated": "2026-11-21T13:22:54",
+  "best_forecaster": "Baseline: exp. smoothing",
+  "best_ml_model": "Random Forest",
+  "metrics_best": {
+    "MAE": 56.153,
+    "RMSE": 129.664,
+    "R2": 0.577,
+    "WAPE_%": 58.965
+  },
+  "n_series": 858,
+  "regions": [
+    "United Kingdom",
+    "Netherlands",
+    "EIRE",
+    "Germany",
+    "France",
+    "Rest of World"
+  ],
+  "demand_class_thresholds": [
+    6.970771886589624,
+    50.99091839742128
+  ],
+  "last_complete_week": "2011-11-28",
+  "settings": {
+    "data_path": "Online_Retail.xlsx",
+    "out_dir": "outputs",
+    "model_dir": "models",
+    "db_path": "stocksense.db",
+    "merged_raw_path": "data_merged_raw.pkl",
+    "n_top_regions": 5,
+    "top_n_products": 300,
+    "min_active_weeks": 8,
+    "test_fraction": 0.2,
+    "qty_cap_pct": 99.5,
+    "seed": 42,
+    "product_code_regex": "^\\d{5}",
+    "demand_pct": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "service_level": 0.95,
+    "default_lead_days": 7,
+    "region_lead_days": {
+      "Rest of World": 14
+    },
+    "review_weeks": 1,
+    "stock_mult_range": [
+      0.3,
+      6.0
+    ],
+    "max_safety_weeks": 3,
+    "demo_perishable_share": 0.08,
+    "expiring_soon_days": 30,
+    "cost_ratio": 0.6,
+    "min_margin": 0.1,
+    "elasticity": 1.5,
+    "max_discount": 0.4,
+    "cover_tiers": [
+      [
+        15,
+        0
+      ],
+      [
+        30,
+        10
+      ],
+      [
+        60,
+        20
+      ],
+      [
+        1000000000,
+        30
+      ]
+    ],
+    "falling_threshold": 0.85,
+    "falling_extra_pct": 5,
+    "expiry_extra_max_pct": 20
+  }
+}

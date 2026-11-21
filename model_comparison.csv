@@ -1,0 +1,9 @@
+,MAE,RMSE,R2,WAPE_%
+Baseline: last week,65.751,154.829,0.396,69.044
+Baseline: 4-wk moving avg,57.596,132.349,0.559,60.481
+Baseline: exp. smoothing,56.153,129.664,0.577,58.965
+Linear Regression (Ridge),60.223,134.031,0.548,63.239
+Random Forest,59.555,138.228,0.519,62.538
+Gradient Boosting,62.532,136.414,0.531,65.664
+Ensemble: 3 ML models avg,59.738,134.215,0.546,62.729
+Ensemble: ML + smoothing + MA4,56.969,130.248,0.573,59.822
