@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 import stocksense as S
 
 ROOT = Path(__file__).resolve().parent
-OUT_DIR = ROOT / "outputs"
+OUT_DIR = ROOT
 MASTER_PATH = OUT_DIR / "master_table.csv"
 COMP_PATH = OUT_DIR / "model_comparison.csv"
 SUMMARY_PATH = OUT_DIR / "summary.json"
